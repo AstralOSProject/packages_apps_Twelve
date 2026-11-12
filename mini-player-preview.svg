@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="1720" viewBox="0 0 430 860" fill="none">
+  <defs>
+    <linearGradient id="screen" x1="20" y1="20" x2="410" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151619"/>
+      <stop offset="1" stop-color="#090A0C"/>
+    </linearGradient>
+    <linearGradient id="coverOne" x1="25" y1="245" x2="154" y2="376" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9D9D9"/>
+      <stop offset="1" stop-color="#3B3C40"/>
+    </linearGradient>
+    <linearGradient id="coverTwo" x1="185" y1="245" x2="315" y2="376" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#AEB0B4"/>
+      <stop offset="1" stop-color="#292A2E"/>
+    </linearGradient>
+    <filter id="playerShadow" x="8" y="630" width="414" height="144" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <clipPath id="screenClip">
+      <rect x="13" y="13" width="404" height="834" rx="38"/>
+    </clipPath>
+  </defs>
+
+  <rect width="430" height="860" rx="52" fill="#030304"/>
+  <rect x="7" y="7" width="416" height="846" rx="44" fill="#1C1D20" stroke="#45464A"/>
+  <g clip-path="url(#screenClip)">
+    <rect x="13" y="13" width="404" height="834" fill="url(#screen)"/>
+
+    <text x="34" y="45" fill="#F4F4F5" font-family="Arial, sans-serif" font-size="14" font-weight="600">9:41</text>
+    <g fill="#F4F4F5">
+      <path d="M345 34h3v10h-3zM350 31h3v13h-3zM355 28h3v16h-3zM360 25h3v19h-3z"/>
+      <path d="M378 31c5-6 15-6 20 0l-2 2c-4-4-11-4-15 0l-3-2Zm4 5c3-3 8-3 11 0l-2 2c-2-2-5-2-7 0l-2-2Zm4 5c1-1 3-1 4 0l-2 3-2-3Z"/>
+      <rect x="403" y="29" width="3" height="14" rx="1.5"/>
+    </g>
+    <rect x="385" y="29" width="17" height="14" rx="3" stroke="#F4F4F5" stroke-width="1.5"/>
+    <rect x="402.5" y="33" width="2" height="6" rx="1" fill="#F4F4F5"/>
+    <rect x="388" y="32" width="10" height="8" rx="1.5" fill="#F4F4F5"/>
+
+    <text x="30" y="102" fill="#F7F7F8" font-family="Arial, sans-serif" font-size="28" font-weight="700">Music</text>
+    <circle cx="386" cy="91" r="20" fill="#242529"/>
+    <path d="M386 80v3m0 16v3m11-11h-3m-16 0h-3m19-8-2 2m-12 12-2 2m16 0-2-2m-12-12-2-2" stroke="#E8E8E9" stroke-width="1.7" stroke-linecap="round"/>
+    <circle cx="386" cy="91" r="6" stroke="#E8E8E9" stroke-width="1.7"/>
+
+    <rect x="27" y="126" width="112" height="32" rx="16" fill="#242529"/>
+    <circle cx="45" cy="142" r="4" fill="#F1F1F2"/>
+    <text x="57" y="147" fill="#F1F1F2" font-family="Arial, sans-serif" font-size="12" font-weight="500">This device</text>
+    <path d="m126 139 4 4-4 4" stroke="#BFC0C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g font-family="Arial, sans-serif" font-size="13" font-weight="600">
+      <text x="31" y="195" fill="#FFFFFF">Activity</text>
+      <text x="115" y="195" fill="#929398">Search</text>
+      <text x="201" y="195" fill="#929398">Library</text>
+    </g>
+    <rect x="29" y="207" width="61" height="3" rx="1.5" fill="#F3F3F4"/>
+    <path d="M28 218h374" stroke="#303135"/>
+
+    <text x="29" y="250" fill="#F1F1F2" font-family="Arial, sans-serif" font-size="19" font-weight="650">Recently played</text>
+    <text x="29" y="272" fill="#A9AAAE" font-family="Arial, sans-serif" font-size="12">Pick up where you left off</text>
+
+    <rect x="28" y="291" width="128" height="153" rx="18" fill="#222327"/>
+    <rect x="28" y="291" width="128" height="128" rx="18" fill="url(#coverOne)"/>
+    <path d="M36 374c21-53 41-68 80-66 12 1 22 7 32 16v95H36v-45Z" fill="#101114" fill-opacity=".76"/>
+    <circle cx="91" cy="351" r="25" stroke="#D9DADD" stroke-opacity=".8" stroke-width="1"/>
+    <circle cx="91" cy="351" r="18" stroke="#D9DADD" stroke-opacity=".7" stroke-width="1" stroke-dasharray="1 5"/>
+    <path d="m87 342 15 9-15 9v-18Z" fill="#F1F1F2"/>
+    <text x="38" y="436" fill="#F1F1F2" font-family="Arial, sans-serif" font-size="12" font-weight="600">Night Drive</text>
+
+    <rect x="169" y="291" width="128" height="153" rx="18" fill="#222327"/>
+    <rect x="169" y="291" width="128" height="128" rx="18" fill="url(#coverTwo)"/>
+    <path d="M169 368c21-15 38-17 56-6 17 10 32 10 72-14v71H169v-51Z" fill="#17181B" fill-opacity=".82"/>
+    <path d="M185 322h96M185 333h64M185 344h79" stroke="#F0F0F1" stroke-opacity=".52" stroke-width="2" stroke-linecap="round"/>
+    <text x="179" y="436" fill="#F1F1F2" font-family="Arial, sans-serif" font-size="12" font-weight="600">Soft Focus</text>
+
+    <rect x="310" y="291" width="92" height="153" rx="18" fill="#222327"/>
+    <rect x="310" y="291" width="92" height="128" rx="18" fill="#404146"/>
+    <circle cx="356" cy="355" r="31" stroke="#D8D9DB" stroke-opacity=".68" stroke-width="1"/>
+    <circle cx="356" cy="355" r="22" stroke="#D8D9DB" stroke-opacity=".5" stroke-width="1" stroke-dasharray="1 5"/>
+    <circle cx="356" cy="355" r="7" fill="#E8E8E9"/>
+    <text x="320" y="436" fill="#F1F1F2" font-family="Arial, sans-serif" font-size="12" font-weight="600">Still Air</text>
+
+    <text x="29" y="491" fill="#F1F1F2" font-family="Arial, sans-serif" font-size="19" font-weight="650">Made for you</text>
+    <rect x="28" y="511" width="374" height="72" rx="18" fill="#1E1F23"/>
+    <circle cx="64" cy="547" r="21" fill="#303136"/>
+    <path d="M56 551c5-13 12-15 17-5 3 5 5 6 8 2" stroke="#E0E0E2" stroke-width="2" stroke-linecap="round"/>
+    <text x="96" y="543" fill="#F1F1F2" font-family="Arial, sans-serif" font-size="14" font-weight="600">Your rotation</text>
+    <text x="96" y="563" fill="#A9AAAE" font-family="Arial, sans-serif" font-size="12">A mix from your library</text>
+    <path d="m371 540 6 6-6 6" stroke="#D5D5D7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="13" y="626" width="404" height="130" fill="#000000" fill-opacity=".25" filter="url(#playerShadow)"/>
+    <rect x="13" y="638" width="404" height="103" rx="18" fill="#242529" stroke="#3D3E42"/>
+    <rect x="29" y="654" width="56" height="56" rx="14" fill="#3A3B40"/>
+    <circle cx="57" cy="682" r="17" stroke="#E5E5E6" stroke-opacity=".72" stroke-width="1"/>
+    <circle cx="57" cy="682" r="11" stroke="#E5E5E6" stroke-opacity=".65" stroke-width="1" stroke-dasharray="1 4"/>
+    <path d="M29 691c12-4 22-24 38-25 7 0 12 6 18 14v30H29v-19Z" fill="#141518" fill-opacity=".8"/>
+    <circle cx="57" cy="682" r="4" fill="#F0F0F1"/>
+
+    <text x="99" y="677" fill="#F6F6F7" font-family="Arial, sans-serif" font-size="14" font-weight="650">Midnight City</text>
+    <text x="99" y="698" fill="#B7B8BC" font-family="Arial, sans-serif" font-size="11.5">M83 · Hurry Up, We’re Dreaming</text>
+
+    <circle cx="332" cy="689" r="19" fill="#303136"/>
+    <path d="M327 681v16l13-8-13-8Z" fill="#E4E4E6"/>
+    <path d="M338 684v10" stroke="#E4E4E6" stroke-width="2" stroke-linecap="round"/>
+
+    <circle cx="382" cy="689" r="22" stroke="#5C5D61" stroke-width="2"/>
+    <circle cx="382" cy="689" r="22" stroke="#F1F1F2" stroke-width="2" stroke-linecap="round" stroke-dasharray="82 138" transform="rotate(-90 382 689)"/>
+    <circle cx="382" cy="689" r="17" fill="#E9E9EA"/>
+    <path d="M377 681v16l13-8-13-8Z" fill="#18191C"/>
+
+    <g fill="#A6A7AB">
+      <circle cx="125" cy="797" r="3"/>
+      <circle cx="215" cy="797" r="3"/>
+      <circle cx="305" cy="797" r="3"/>
+    </g>
+    <g stroke="#B8B9BC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M119 814h12v11h-12zM122 811h6v3h-6z"/>
+      <circle cx="215" cy="818" r="7"/><path d="M215 814v5l3 2"/>
+      <path d="M298 812h14v12h-14zM302 808h6"/>
+    </g>
+    <g font-family="Arial, sans-serif" font-size="9" text-anchor="middle">
+      <text x="125" y="838" fill="#B8B9BC">Activity</text>
+      <text x="215" y="838" fill="#B8B9BC">Search</text>
+      <text x="305" y="838" fill="#B8B9BC">Library</text>
+    </g>
+    <rect x="166" y="846" width="98" height="4" rx="2" fill="#F5F5F6"/>
+  </g>
+</svg>
