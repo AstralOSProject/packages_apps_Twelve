@@ -40,8 +40,23 @@ class NowPlayingAppWidgetProvider : BaseAppWidgetProvider<NowPlayingAppWidgetPro
 
                 setOnClickPendingIntent(R.id.linearLayout, openNowPlayingPendingIntent)
 
-                setTextViewText(R.id.titleTextView, mediaMetadata.title ?: "")
-                setTextViewText(R.id.artistNameTextView, mediaMetadata.artist ?: "")
+                setTextViewText(
+                    R.id.titleTextView,
+                    mediaMetadata.displayTitle ?: mediaMetadata.title ?: ""
+                )
+                val artist = mediaMetadata.artist?.toString().orEmpty()
+                val album = mediaMetadata.albumTitle?.toString().orEmpty()
+                val subtitle = when {
+                    artist.isNotEmpty() && album.isNotEmpty() -> context.getString(
+                        R.string.now_playing_bar_subtitle,
+                        artist,
+                        album,
+                    )
+
+                    artist.isNotEmpty() -> artist
+                    else -> album
+                }
+                setTextViewText(R.id.artistNameTextView, subtitle)
 
                 setOnClickPendingIntent(
                     R.id.playPauseImageButton,

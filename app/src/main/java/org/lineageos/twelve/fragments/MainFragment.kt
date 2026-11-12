@@ -368,6 +368,10 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             viewModel.togglePlayPause()
         }
 
+        nowPlayingBar.setOnNextTrackClickListener {
+            viewModel.seekToNext()
+        }
+
         nowPlayingBar.setOnNowPlayingClickListener {
             findNavController().navigateSafe(R.id.action_mainFragment_to_fragment_now_playing)
         }

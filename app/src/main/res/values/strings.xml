@@ -261,7 +261,9 @@
 
     <!-- Content descriptions -->
     <string name="content_description_play_pause">Play/pause</string>
+    <string name="content_description_next_track">Next track</string>
     <string name="content_description_thumbnail">Thumbnail</string>
+    <string name="now_playing_bar_subtitle">%1$s · %2$s</string>
 
     <!-- Play buttons -->
     <string name="play_all">Play all</string>

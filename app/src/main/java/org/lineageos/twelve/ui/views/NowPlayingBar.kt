@@ -30,9 +30,9 @@ class NowPlayingBar @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : FrameLayout(context, attrs) {
     private val artistNameTextView by lazy { findViewById<TextView>(R.id.artistNameTextView) }
-    private val albumTitleTextView by lazy { findViewById<TextView>(R.id.albumTitleTextView) }
     private val circularProgressIndicator by lazy { findViewById<CircularProgressIndicator>(R.id.circularProgressIndicator) }
     private val materialCardView by lazy { findViewById<MaterialCardView>(R.id.materialCardView) }
+    private val nextTrackMaterialButton by lazy { findViewById<MaterialButton>(R.id.nextTrackMaterialButton) }
     private val playPauseMaterialButton by lazy { findViewById<MaterialButton>(R.id.playPauseMaterialButton) }
     private val thumbnailImageView by lazy { findViewById<ImageView>(R.id.thumbnailImageView) }
     private val titleTextView by lazy { findViewById<TextView>(R.id.titleTextView) }
@@ -82,6 +82,9 @@ class NowPlayingBar @JvmOverloads constructor(
     fun setOnPlayPauseClickListener(l: OnClickListener?) =
         playPauseMaterialButton.setOnClickListener(l)
 
+    fun setOnNextTrackClickListener(l: OnClickListener?) =
+        nextTrackMaterialButton.setOnClickListener(l)
+
     fun setOnNowPlayingClickListener(l: OnClickListener?) {
         materialCardView.setOnClickListener(l)
     }
@@ -112,16 +115,13 @@ class NowPlayingBar @JvmOverloads constructor(
             titleTextView.text = audioTitle
         }
 
-        val artistName = mediaMetadata.artist
-            ?: context.getString(R.string.artist_unknown)
-        if (artistNameTextView.text != artistName) {
-            artistNameTextView.text = artistName
-        }
-
+        val artistName = mediaMetadata.artist ?: context.getString(R.string.artist_unknown)
         val albumTitle = mediaMetadata.albumTitle
-            ?: context.getString(R.string.album_unknown)
-        if (albumTitleTextView.text != albumTitle) {
-            albumTitleTextView.text = albumTitle
+        val subtitle = albumTitle?.let {
+            context.getString(R.string.now_playing_bar_subtitle, artistName, it)
+        } ?: artistName
+        if (artistNameTextView.text != subtitle) {
+            artistNameTextView.text = subtitle
         }
     }
 
